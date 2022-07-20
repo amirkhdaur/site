@@ -1,0 +1,40 @@
+.search-form {
+  text-align: start;
+
+  &__input-wrap {
+    border-radius: 0.5em;
+    display: flex;
+    align-items: center;
+    background-color: #EEEEEE;
+    padding-left: 20px;
+    width: 600px;
+  }
+
+  &__input {
+    @extend %caption-2-medium;
+    border: none;
+    padding: 16px 20px 16px 10px;
+    border-radius: 0.5em;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+
+    &::placeholder {
+      opacity: 1;
+      color: #4C526A;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border:none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__tips {
+    @extend %caption-3-regular;
+    color: #EEEEEE;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+@include tablet() {
+  .banner {
+    padding-top: 168px;
+    padding-bottom: 125px;
+
+    &__subtitle {
+      @include subtitle-2-regular;
+    }
+  }
+}
+
+@include mobile() {
+  .banner {
+    padding-top: 125px;
+    padding-bottom: 99px;
+
+    &__title {
+      @include heading-6;
+    }
+
+    &__subtitle {
+      @include subtitle-3-medium;
+    }
+  }
+}

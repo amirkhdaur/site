@@ -1,0 +1,11 @@
+@include tablet {
+  .container {
+    max-width: $content-width-md;
+  }
+}
+
+@include mobile {
+  .container {
+    max-width: $content-width-sm;
+  }
+}

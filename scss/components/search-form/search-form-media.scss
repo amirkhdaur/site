@@ -1,0 +1,12 @@
+@include mobile {
+  .search-form {
+    &__input-wrap {
+      padding-left: 10px;
+      width: 100%;
+    }
+
+    &__input {
+      padding: 8px 10px 8px 10px;
+    }
+  }
+}

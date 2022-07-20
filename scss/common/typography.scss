@@ -1,0 +1,276 @@
+// Heading
+@mixin heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+@mixin heading-1 {
+  @include heading;
+  font-size: 5.14rem;
+  line-height: 1.36;
+  letter-spacing: -0.01em;
+}
+
+@mixin heading-2 {
+  @include heading;
+  font-size: 3.43rem;
+  line-height: 1.33;
+  letter-spacing: -0.01em;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 2.57rem;
+  line-height: 1.465;
+}
+
+@mixin heading-4 {
+  @include heading;
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+@mixin heading-5 {
+  @include heading;
+  font-size: 1.71rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 1.43rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+%heading-1 {
+  @include heading-1;
+}
+%heading-2 {
+  @include heading-2;
+}
+%heading-3 {
+  @include heading-3;
+}
+%heading-4 {
+  @include heading-4;
+}
+%heading-5 {
+  @include heading-5;
+}
+%heading-6 {
+  @include heading-6;
+}
+
+// Subtitles
+
+$st-regular-weight: 500;
+$st-medium-weight: 600;
+
+@mixin subtitle {
+  font-family: 'Inter';
+  font-style: normal;
+  letter-spacing: -0.05em;
+}
+
+@mixin subtitle-1 {
+  @include subtitle;
+  line-height: 1.7;
+  font-size: 1.43rem;
+}
+@mixin subtitle-2 {
+  @include subtitle;
+  line-height: 1.72;
+  font-size: 1.29rem;
+}
+@mixin subtitle-3 {
+  @include subtitle;
+  line-height: 1.38;
+  font-size: 1.14rem;
+}
+@mixin subtitle-4 {
+  @include subtitle;
+  line-height: 1.38;
+  font-size: 1rem;
+}
+
+@mixin subtitle-medium {
+  font-weight: $st-medium-weight;
+}
+@mixin subtitle-regular {
+  font-weight: $st-regular-weight;
+}
+
+@mixin subtitle-1-medium {
+  @include subtitle-1;
+  @include subtitle-medium;
+}
+@mixin subtitle-1-regular {
+  @include subtitle-1;
+  @include subtitle-regular;
+}
+@mixin subtitle-2-medium {
+  @include subtitle-2;
+  @include subtitle-medium;
+}
+@mixin subtitle-2-regular {
+  @include subtitle-2;
+  @include subtitle-regular;
+}
+@mixin subtitle-3-medium {
+  @include subtitle-3;
+  @include subtitle-medium;
+}
+@mixin subtitle-3-regular {
+  @include subtitle-3;
+  @include subtitle-regular;
+}
+@mixin subtitle-4-medium {
+  @include subtitle-4;
+  @include subtitle-medium;
+}
+@mixin subtitle-4-regular {
+  @include subtitle-4;
+  @include subtitle-regular;
+}
+
+%subtitle-1-medium {
+  @include subtitle-1-medium;
+}
+%subtitle-1-regular {
+  @include subtitle-1-regular;
+}
+%subtitle-2-medium {
+  @include subtitle-2-medium;
+}
+%subtitle-2-regular {
+  @include subtitle-2-regular;
+}
+%subtitle-3-medium {
+  @include subtitle-3-medium;
+}
+%subtitle-3-regular {
+  @include subtitle-3-regular;
+}
+%subtitle-4-medium {
+  @include subtitle-4-medium;
+}
+%subtitle-4-regular {
+  @include subtitle-4-regular;
+}
+
+
+// Captions
+$cp-regular-weight: 400;
+$cp-medium-weight: 500;
+
+@mixin caption {
+  font-family: 'Inter';
+  font-style: normal;
+  letter-spacing: -0.05em;
+}
+
+@mixin caption-1 {
+  @include caption;
+  line-height: 1.89;
+  font-size: 1.29rem;
+}
+@mixin caption-2 {
+  @include caption;
+  line-height: 1.8;
+  font-size: 1.14rem;
+}
+@mixin caption-3 {
+  @include caption;
+  line-height: 1.72;
+  font-size: 1rem;
+}
+
+@mixin caption-medium {
+  font-weight: $cp-medium-weight;
+}
+@mixin caption-regular {
+  font-weight: $cp-regular-weight;
+}
+
+@mixin caption-1-medium {
+  @include caption-1;
+  @include caption-medium;
+}
+@mixin caption-1-regular {
+  @include caption-1;
+  @include caption-regular;
+}
+@mixin caption-2-medium {
+  @include caption-2;
+  @include caption-medium;
+}
+@mixin caption-2-regular {
+  @include caption-2;
+  @include caption-regular;
+}
+@mixin caption-3-medium {
+  @include caption-3;
+  @include caption-medium;
+}
+@mixin caption-3-regular {
+  @include caption-3;
+  @include caption-regular;
+}
+
+%caption-1-medium {
+  @include caption-1-medium;
+}
+%caption-1-regular {
+  @include caption-1-regular;
+}
+%caption-2-medium {
+  @include caption-2-medium;
+}
+%caption-2-regular {
+  @include caption-2-regular;
+}
+%caption-3-medium {
+  @include caption-3-medium;
+}
+%caption-3-regular {
+  @include caption-3-regular;
+}
+
+// label
+@mixin label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+@mixin label-1 {
+  @include label;
+  line-height: 1.5;
+  font-size: 1.14rem;
+}
+@mixin label-2 {
+  @include label;
+  line-height: 1.71;
+  font-size: 1rem;
+}
+@mixin label-3 {
+  @include label;
+  line-height: 1.33;
+  font-size: .86rem;
+}
+
+%label-1 {
+  @include label-1;
+}
+%label-2 {
+  @include label-2;
+}
+%label-3 {
+  @include label-3;
+}

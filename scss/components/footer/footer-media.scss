@@ -1,0 +1,51 @@
+@include tablet {
+  .footer {
+    padding: 40px 0;
+
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__logo {
+      height: 21px;
+    }
+
+    &__subtitle {
+      @include caption-3-regular;
+      margin-bottom: 20px;
+    }
+
+    &__copyright {
+      @include caption-3-regular;
+    }
+
+    &__row {
+      width: 100%;
+      gap: 0;
+      justify-content: space-between;
+    }
+
+    &__title {
+      @include subtitle-3-medium;
+    }
+
+    &__link {
+      @include caption-3-regular;
+    }
+  }
+}
+
+@include mobile {
+  .footer {
+    &__inner {
+      gap: 34px 0;
+    }
+
+    &__row {
+      flex-wrap: wrap;
+      gap: 34px 66px;
+      justify-content: flex-start;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+
+  &__inner {
+    align-items: center;
+  }
+
+  &__logo {
+    height: 17px;
+    margin-right: auto;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__nav {
+    padding: 10px;
+  }
+
+  &__link {
+    @extend %label-2;
+    opacity: 0.6;
+    margin-right: 36px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &_active {
+      opacity: 1;
+    }
+  }
+
+  &__login {
+    @extend %label-2;
+    text-decoration: none;
+    margin-left: 43px;
+    border-radius: 0.57em;
+    padding: 0.71em 1.43em;
+    background-color: #0432DF;
+    color: white;
+  }
+}

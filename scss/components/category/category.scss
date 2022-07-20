@@ -1,0 +1,43 @@
+.category {
+  padding: 60px 0;
+
+  &__title {
+    @extend %heading-4;
+    color: #020D37;
+  }
+
+  &__row {
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 16px 0;
+  }
+
+  &__card {
+    width: 157px;
+    height: 117px;
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  &__img {
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__card-title {
+    @extend %subtitle-2-medium;
+    color: #EEEEEE;
+    position: absolute;
+  }
+}

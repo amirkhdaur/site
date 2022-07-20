@@ -1,0 +1,47 @@
+.about-us {
+  padding: 60px 0 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__text {
+    max-width: 337px;
+  }
+
+  &__toptitle {
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    @extend %heading-4;
+    color: #020D37;
+  }
+
+  &__row {
+    justify-content: flex-end;
+    gap: 53px 110px;
+  }
+
+  &__card {
+    width: 246px;
+  }
+
+  &__card-img {
+    width: 56px;
+    height: 56px;
+  }
+
+  &__card-title {
+    @extend %subtitle-2-medium;
+    color: #020D37;
+    margin: 21px 0 4px;
+  }
+
+  &__card-subtitle {
+    @extend %caption-3-medium;
+    color: #4C526A;
+  }
+}

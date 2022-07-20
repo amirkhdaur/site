@@ -1,0 +1,12 @@
+@include tablet() {
+  .list-btn {
+    display: block;
+  }
+}
+
+@include mobile {
+  .list-btn {
+    width: 1.71rem;
+    height: 1.14rem;
+  }
+}

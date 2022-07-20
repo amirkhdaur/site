@@ -1,0 +1,36 @@
+@include tablet {
+  .trust {
+    padding: 40px 0 40px;
+
+    &__img {
+      $coef: 0.8;
+      height: 50px * $coef;
+
+      &_mr-beast {
+        height: 54px * $coef;
+      }
+
+      &_wb {
+        height: 62px * $coef;
+      }
+
+      &_netflix, &_pixar {
+        height: 25px * $coef;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .trust {
+    padding: 30px 0 40px;
+
+    &__row {
+      gap: 30px;
+    }
+
+    &__title {
+      @include subtitle-2-medium;
+    }
+  }
+}
